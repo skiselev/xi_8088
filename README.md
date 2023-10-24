@@ -10,7 +10,7 @@ Xi 8088 is an IBM PC/XT compatible processor board in ISA board form factor. It 
 ## Specifications
 
 * Processor: Intel 8088 or compatible, NEC V20.
-  * Supports both standard 4.77MHz CPU clock and turbo, up to 13.33MHz CPU clock operation.
+  * Supports both standard 4.77MHz CPU clock and turbo, up to 13.33MHz, CPU clock operation.
 * Coprocessor: Intel 8087.
 * RAM: Up to 832 KiB of usable system memory (640 KiB base memory, and up to 192 KiB UMB); Implemented using SRAM.
 * ROM: 128 KiB flash ROM. Configurable to either 64 KiB or 128 KiB.
@@ -20,32 +20,6 @@ Xi 8088 is an IBM PC/XT compatible processor board in ISA board form factor. It 
 * Two 8259 programmable interrupt controllers (PICs), supporting the total of 15 interrupts;  10 interrupts available for extension cards
 * One 8254 programmable interval timer (PIT)
 * One DS12885/DS12887 real time clock and non-volatile RAM (RTC/NVRAM) 
-
- 
-
-Specifications
-Processor: Intel 8088 or compatible, NEC V20.
-
-Supports both standard 4.77MHz CPU clock and turbo, up to 13.33MHz CPU clock operation.
-
-Coprocessor: Intel 8087.
-
-RAM: Up to 832 KiB of usable system memory (640 KiB base memory, and up to 192 KiB UMB); Implemented using SRAM.
-
-ROM: 128 KiB flash ROM. Configurable to either 64 KiB or 128 KiB.
-
-8-bit ISA interface with several ISA/AT signals
-
-PS/2 compatible keyboard and mouse controller
-
-One 8237 direct memory access controller (DMAC)
-
-Two 8259 programmable interrupt controllers (PICs), supporting the total of 15 interrupts;  10 interrupts available for extension cards
-
-One 8254 programmable interval timer (PIT)
-
-One DS12885/DS12887 real time clock and non-volatile RAM (RTC/NVRAM) 
-
  
 ## Firmware / BIOS
 
@@ -104,11 +78,11 @@ Port Address | Device and/or Function          | Write                   | Read
 61h          | Port B - Bit 0                  | 0 = Disable PIT Channel 2; 1 = Enable PIT Channel 2 (Note: Channel 2 is connected to the speaker) | 0 = PIT Channel 2 disabled; 1 = PIT Channel 2 enabled
              | Port B - Bit 1                  | 0 = Disable speaker; 1 = Enable speaker | 0 = Speaker disabled; 1 = Speaker enabled
              | Port B - Bit 2                  | 0 = Disable turbo mode; 1 = Enable turbo mode | 0 = Turbo mode disabled; 1 = Turbo mode enabled
-			 | Port B - Bit 3                  | 0 = Disable I/O check NMI; 1 = Enable I/O check NMI (Note: Write 0 followed by 1 to clear the I/O check NMI state condition) | 0 = I/O check NMI disabled; 1 = I/O check NMI disabled
+             | Port B - Bit 3                  | 0 = Disable I/O check NMI; 1 = Enable I/O check NMI (Note: Write 0 followed by 1 to clear the I/O check NMI state condition) | 0 = I/O check NMI disabled; 1 = I/O check NMI disabled
              | Port B - Bit 4                  | N/A                     | PIT Channel 0 output divided by 2 (Toggles every 15 µs)
              | Port B - Bit 5                  | N/A                     | PIT Channel 2 output
              | Port B - Bit 6                  | N/A                     | 0 = No NMI from I/O check; 1 = NMI from I/O check
-			 | Port B - Bit 7                  | N/A                     | Always reads as 0
+             | Port B - Bit 7                  | N/A                     | Always reads as 0
 62h-63h      | Aliases for 60h-61h             |                         |
 64h          | Keyboard controller             |                         |
 65h-6Fh      | Aliases for 60h-04h             |                         |
