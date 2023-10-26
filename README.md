@@ -1,4 +1,4 @@
-# Micro 8088
+# Xi 8088
 IBM XT Compatible Processor Board based on Intel 8xxx series ICs
 
 ## Introduction
