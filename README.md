@@ -253,17 +253,17 @@ Note: One and only one of SW3 switches must be on
 
 Component type | Reference | Description                              | Quantity | Possible sources and notes 
 -------------- | --------- | ---------------------------------------- | -------- | --------------------------
-PCB            |           | Xi 8088 PCB Version 2.0                  | 1        | Todd Goodman or your favorite PCB manufacturer
-Battery Holder | BT1       | CR2032 batter holder, 20 mm lead spacing | 1        | Jameco 355434; Mouser 122-2620-GR, 122-2520-GR, 122-2420-GR
-Capacitor      | C1 - C46  | 0.1 uF ceramic, 5.08 mm lead spacing     | 46       | Mouser 810-FK28X7R1H104K, 80-C323C104K5R; Jameco 25523
-Capacitor      | C47 - C51 | 10 uF ceramic, 5.08 mm lead spacing      | 5        | Mouser 810-FK24X5R1C106K. Note: Can be replaced with tantalum or electrolytic capacitors
-Capacitor      | C52, C53  | 33 pF ceramic, 5.08 mm lead spacing      | 2        | Mouser 80-CK05BX330K-TR; Jameco 1947010. Note: Install only if using CMOS type of U1 82C84, for NMOS 8284 install R8 and R9 instead
-Capacitor      | C54       | 5-30 pF trimmer capacitor                | 1        | Mouser 81-TZ03R300F169B00; Jameco 136979
-Capacitor      | C55 - C58 | 47 pF ceramic, 5.08 mm lead spacing      | 4        | Mouser 80-CK05BX470K-TR; Jameco 1947036
-Capacitor      | C59       | 0.01 uF ceramic, 5.08 mm lead spacing    | 1        | Mouser 80-C322C103K1R5CA; Jameco 597281
-Diode          | D1        | 1N4148                                   | 1        | Jameco 36038, 179215; Mouser 512-1N4148, 771-1N4148-T/R
-Diode          | D2, D3    | Bi-level LED indicator                   | 1        | Mouser 696-SSF-LXH240GYD; Jameco: Search for "Bi-Level LED", choose one with pins in square pattern (not in line)
-Fuse           | F1        | 1.1A polyfuse, 5.04 mm lead spacing      | 1        | Mouser 576-16R110BPR; Jameco 199912
+PCB            |           | Xi 8088 PCB Version 2.0                  | 1        | [Todd Goodman](https://retrobrewcomputers.org/doku.php?id=boardinventory) or your favorite PCB manufacturer
+Battery Holder | BT1       | CR2032 batter holder, 20 mm lead spacing | 1        | Mouser [122-2620-GR](https://www.mouser.com/ProductDetail/122-2620-GR), [122-2520-GR](https://www.mouser.com/ProductDetail/122-2520-GR), [122-2420-GR](https://www.mouser.com/ProductDetail/122-2420-GR); Jameco [355434](https://www.jameco.com/z/17002-00603-Jameco-Reliapro-PC-Mount-CR2032-Coin-Cell-Battery-Holder_355434.html)
+Capacitor      | C1 - C46  | 0.1 uF ceramic, 5.08 mm lead spacing     | 46       | Mouser [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6), [80-C323C104K5R](https://www.mouser.com/ProductDetail/80-C323C104K5R); Jameco [25523](https://www.jameco.com/z/MD-1-James-Electronics-Monolithic-Ceramic-Capacitor-0-1-micro-F-50V-20-_25523.html)
+Capacitor      | C47 - C51 | 10 uF ceramic, 5.08 mm lead spacing      | 5        | Mouser [810-FG28X5R1E106MR00](https://www.mouser.com/ProductDetail/810-FG28X5R1E106MR00). Note: Can be replaced with tantalum or electrolytic capacitors
+Capacitor      | C52, C53  | 33 pF ceramic, 5.08 mm lead spacing      | 2        | Mouser [810-FG28C0G2A330JNT6](https://www.mouser.com/ProductDetail/810-FG28X5R1E106MR00); Jameco [332217](https://www.jameco.com/z/DC33-50-Jameco-ValuePro-Capacitor-Ceramic-Disc-33pF-50V-plusmn20-37_332217.html). Note: Install only if using CMOS type of U1 82C84, for NMOS 8284 install R8 and R9 instead
+Capacitor      | C54       | 5-30 pF trimmer capacitor                | 1        | DigiKey [GKG30015](https://www.digikey.com/en/products/detail/ew-electronics/GKG30015/11689271); Jameco [136979](https://www.jameco.com/z/CTC05-50-Jameco-ValuePro-9-50pF-Ceramic-Trimmer-Capacitor-5mm-200-Volt-DC_136979.html)
+Capacitor      | C55 - C58 | 47 pF ceramic, 5.08 mm lead spacing      | 4        | Mouser [810-FG28C0G2A470JNT0](https://www.mouser.com/ProductDetail/810-FG28C0G2A470JNT0); Jameco [1947036](https://www.jameco.com/z/DC47TR-Jameco-ValuePro-Capacitor-Ceramic-Disc-47pf-500V-plusmn5-37_1947036.html)
+Capacitor      | C59       | 0.01 uF ceramic, 5.08 mm lead spacing    | 1        | Mouser [810-FG28X7R1H103KNT0](https://www.mouser.com/ProductDetail/810-FG28X7R1H103KNT0); Jameco [597281](https://www.jameco.com/z/SR151C103KAA-JVP-James-Electronics-Capacitor-Monolithic-Ceramic-0-01uF-100V-plusmn-10-37-_544833.html)
+Diode          | D1        | 1N4148                                   | 1        | Mouser [512-1N4148](https://www.mouser.com/ProductDetail/512-1N4148); Jameco [36038](https://www.jameco.com/z/1N4148-Major-Brands-Diode-1N4148-100V-200mA-10mA-If-Small-Signal-Switching-Bulk-_36038.html), [179215](https://www.jameco.com/z/1N4148TRA-Major-Brands-Diode-1N4148-100-Volt-200mA-20mA-If-Small-Signal-DO-35-Tape-Reel-Ammo-_151247.html)
+Diode          | D2, D3    | Bi-level LED indicator                   | 1        | Mouser [696-SSF-LXH240GYD](https://www.mouser.com/ProductDetail/696-SSF-LXH240GYD)
+Fuse           | F1        | 1.1A polyfuse, 5.04 mm lead spacing      | 1        | Mouser [504-PTR030V0110-BK](https://www.mouser.com/ProductDetail/504-PTR030V0110-BK)
 Connector      | J1, J2, P3, P4, P5 | 13x1 pin header                 | 1        | Mouser 649-68000-113HLF
 Connector      | J3        | 3x1 pin header                           | 1        | Jameco 109576; Mouser 649-69190-103HLF, 649-78229-103HLF
 Connector      | J4        | 6x2 pin header                           | 1        | Mouser 649-68021-212HLF
