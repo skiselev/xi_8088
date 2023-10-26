@@ -75,14 +75,15 @@ Port Address | Device and/or Function          | Write                   | Read
 43h          | PIT - Control Word              |                         |
 44h-5Fh      | Aliases for 40h-43h (PIT)       |                         |
 60h          | Keyboard controller             |                         |
-61h          | Port B - Bit 0                  | 0 = Disable PIT Channel 2; 1 = Enable PIT Channel 2 (Note: Channel 2 is connected to the speaker) | 0 = PIT Channel 2 disabled; 1 = PIT Channel 2 enabled
-61h          | Port B - Bit 1                  | 0 = Disable speaker; 1 = Enable speaker | 0 = Speaker disabled; 1 = Speaker enabled
-61h          | Port B - Bit 2                  | 0 = Disable turbo mode; 1 = Enable turbo mode | 0 = Turbo mode disabled; 1 = Turbo mode enabled
-61h          | Port B - Bit 3                  | 0 = Disable I/O check NMI; 1 = Enable I/O check NMI (Note: Write 0 followed by 1 to clear the I/O check NMI state condition) | 0 = I/O check NMI disabled; 1 = I/O check NMI disabled
-61h          | Port B - Bit 4                  | N/A                     | PIT Channel 0 output divided by 2 (Toggles every 15 µs)
-61h          | Port B - Bit 5                  | N/A                     | PIT Channel 2 output
-61h          | Port B - Bit 6                  | N/A                     | 0 = No NMI from I/O check; 1 = NMI from I/O check
-61h          | Port B - Bit 7                  | N/A                     | Always reads as 0
+61h          | Port B                          | Write Port B (4 low bits only) | Read Port B
+61h, bit 0   | PIT Channel 2 gate. PIT channel 2 is connected to the speaker | 0 = Disable PIT channel 2; 1 = Enable PIT channel 2 | 0 = PIT channel 2 disabled; 1 = PIT channel 2 enabled
+61h, bit 1   | Speaker control                 | 0 = Turn speaker off; 1 = Turn speaker on| 0 = Speaker is off; 1 = Speaker is on
+61h, bit 2   | Turbo mode control              | 0 = Disable turbo mode; 1 = Enable turbo mode | 0 = Turbo mode disabled; 1 = Turbo mode enabled
+61h, bit 3   | I/O check NMI control. Write 0 followed by 1 to clear the I/O check NMI state condition | 0 = Disable I/O check NMI; 1 = Enable I/O check NMI | 0 = I/O check NMI disabled; 1 = I/O check NMI disabled
+61h, bit 4   | PIT Channel 0 output divided by 2. Toggles every 15 µs | N/A                     | PIT Channel 0 output divided by 2
+61h, bit 5   | PIT Channel 2 output            | N/A                     | PIT Channel 2 output
+61h, bit 6   | I/O check NMI status            | N/A                     | 0 = No NMI from I/O check; 1 = NMI from I/O check
+61h, bit 7   | Memory parity NMI status. Not supported on Xi 8088 | N/A                     | Always reads as 0
 62h-63h      | Aliases for 60h-61h             |                         |
 64h          | Keyboard controller             |                         |
 65h-6Fh      | Aliases for 60h-04h             |                         |
